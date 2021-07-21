@@ -1196,6 +1196,7 @@ class DiskDataset(Dataset):
     """
     if data_dir is None:
       data_dir = tempfile.mkdtemp()
+      print("Data directory:", data_dir)
     elif not os.path.exists(data_dir):
       os.makedirs(data_dir)
 
